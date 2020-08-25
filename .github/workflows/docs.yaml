@@ -41,7 +41,7 @@ jobs:
           curl "https://raw.githubusercontent.com/fluxcd/notification-controller/$NOTIFICATION_VER/docs/spec/v1alpha1/receiver.md" > docs/components/notification/receiver.md
 
           # install script
-          cp install/tk.sh docs/install.sh
+          cp install/gotk.sh docs/install.sh
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
